@@ -1,0 +1,180 @@
+/* Global font*/
+body {
+    font-family: 'Arial', sans-serif; 
+    line-height: 1.6;
+}
+
+
+/* Headings and paragraphs */
+h1, h3 {
+    font-family: 'Georgia', serif; 
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+
+/* Sections */
+section {
+    margin: 2rem auto; /* Center sections with equal spacing */
+    padding: 2rem;
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 10px; /* Rounded corners */
+    /* background-color: #f9f9f9; */
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+
+/* Links */
+a {
+    color: #007bff; /* Default blue color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+}
+
+a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+a:active {
+    color: #003366; /* Even darker shade when active */
+}
+
+
+/* Images */
+img {
+    border: 2px solid #ddd; /* Light grey border */
+    border-radius: 10px;
+    padding: 0.1rem;
+    width: 20rem;
+    height: 15rem;
+}
+
+#profile-picture-id {
+    border: 2px solid #ddd; /* Light grey border */
+    border-radius: 10px; /* Make the image circular */
+    padding: 0.1rem;
+    width: 20rem; /* Adjust size */
+    height: 20rem;
+    display: block;
+    margin: 1rem auto; /* Center the image */
+}
+
+
+/* About section style */
+.text-box { grid-area: text; }
+
+.picture-box { grid-area: picture; }
+
+.about-container {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: 'picture text text text text text'
+}
+
+
+/* List items */
+ul li {
+    margin: 0.5rem 0;
+    padding: 0.2rem;
+    list-style: none;
+}
+
+ul li::before {
+    content: "› ";
+    color: #007bff;
+    font-weight: bold;
+}
+
+
+/* Resume section style */
+.resume {
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 1200px;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+}
+
+.resume-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center; /* Aligns grid items vertically */
+    justify-content: center; /* Centers grid items horizontally */
+    text-align: left; /* Ensures text alignment remains left */
+}
+
+.resume-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.resume-item {
+    padding-left: 2rem;
+    border-left: 2px solid #007bff;
+}
+
+.resume ul {
+    padding: 0;
+}
+
+
+/* Button */
+button {
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded edges */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+/* Light/dark mode */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --primary-color: #007bff;
+    --secondary-color: #f9f9f9;
+}
+
+body.dark-theme {
+    --bg-color: #1e1e1e;
+    --text-color: #ffffff;
+    --primary-color: #00bfff;
+    --secondary-color: #2e2e2e;
+}
+
+/* Apply theme colors */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.resume {
+    background-color: var(--secondary-color);
+    border-color: var(--primary-color);
+}
+
+a {
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--text-color);
+}

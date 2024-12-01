@@ -20,11 +20,10 @@ p {
 
 /* Sections */
 section {
-    margin: 2rem auto; /* Center sections with equal spacing */
+    margin: 2rem auto; 
     padding: 2rem;
-    border: 1px solid #ccc; /* Light grey border */
-    border-radius: 10px; /* Rounded corners */
-    /* background-color: #f9f9f9; */
+    border: 1px solid #ccc; 
+    border-radius: 10px;
     align-items: center;
     align-content: center;
     justify-content: center;
@@ -33,24 +32,24 @@ section {
 
 /* Links */
 a {
-    color: #007bff; /* Default blue color */
-    text-decoration: none; /* Remove underline */
+    color: #007bff; 
+    text-decoration: none;
     font-weight: bold;
 }
 
 a:hover {
-    color: #0056b3; /* Darker blue on hover */
-    text-decoration: underline; /* Add underline on hover */
+    color: #0056b3; 
+    text-decoration: underline;
 }
 
 a:active {
-    color: #003366; /* Even darker shade when active */
+    color: #003366; 
 }
 
 
 /* Images */
 img {
-    border: 2px solid #ddd; /* Light grey border */
+    border: 2px solid #ddd; 
     border-radius: 10px;
     padding: 0.1rem;
     width: 20rem;
@@ -58,13 +57,13 @@ img {
 }
 
 #profile-picture-id {
-    border: 2px solid #ddd; /* Light grey border */
-    border-radius: 10px; /* Make the image circular */
+    border: 2px solid #ddd; 
+    border-radius: 10px; 
     padding: 0.1rem;
-    width: 20rem; /* Adjust size */
+    width: 20rem; 
     height: 20rem;
     display: block;
-    margin: 1rem auto; /* Center the image */
+    margin: 1rem auto; 
 }
 
 
@@ -107,9 +106,9 @@ ul li::before {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    align-items: center; /* Aligns grid items vertically */
-    justify-content: center; /* Centers grid items horizontally */
-    text-align: left; /* Ensures text alignment remains left */
+    align-items: center; 
+    justify-content: center; 
+    text-align: left; 
 }
 
 .resume-column {
@@ -130,17 +129,17 @@ ul li::before {
 
 /* Button */
 button {
-    background-color: #007bff; /* Blue background */
-    color: #fff; /* White text */
+    background-color: #007bff; 
+    color: #fff; 
     border: none;
     padding: 0.5rem 1rem;
     font-size: 1rem;
     cursor: pointer;
-    border-radius: 5px; /* Rounded edges */
+    border-radius: 5px; 
 }
 
 button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3; 
 }
 
 

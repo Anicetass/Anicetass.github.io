@@ -7,14 +7,29 @@
         <meta charset="utf-8"/>
         <meta name="description" content="HTML lab">
         <meta name="keywords" content="HTML">
-        <title>HTML laboratorinis 3</title>
+        <title>HTML laboratorinis 4</title>
         <link rel="stylesheet" href="styles.css">
         <script src="dark_light_theme.js" defer></script>
     </head>
 
     <body>
         <button id="theme-toggle">Šviesus/Tamsus režimas</button>
-        <section class="about-section">
+
+        <header class="header">
+            <img src="media/logo.jpg" alt="Logo" class="logo">
+            <nav class="nav">
+                <ul>
+                    <li><a href="#about-id">Apie</a></li>
+                    <li><a href="#resume-id">Resume</a></li>
+                    <li><a href="#portfolio-id">Portfolio</a></li>
+                    <li><a href="#services-id">Paslaugos</a></li>
+                    <li><a href="#contacts-id">Kontaktai</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+        <section class="about-section" id="about-id">
             <h1>Apie</h1>
             <div class="about-container">
 
@@ -38,7 +53,7 @@
         </section>
 
         <section>
-            <div class="resume">
+            <div class="resume" id="resume-id">
                 <h1>Resume</h1>
                 <div class="resume-grid">
                     <div class="resume-column">
@@ -70,14 +85,17 @@
             </div>
         </section>
         
-        <section>
+        <section class="portfolio-section" id="portfolio-id">
             <h1>Portfolio</h1>
-            <img src="media/portfolio1.jpg" alt="Portfolio1" width="300" height="200">
-            <img src="media/portfolio2.webp" alt="Portfolio2" width="300" height="200">
-            <img src="media/portfolio3.jpg" alt="Portfolio3" width="300" height="200">
+            <div class="portfolio-flex">
+                <img src="media/portfolio1.jpg" alt="Portfolio1" width="300" height="200">
+                <img src="media/portfolio2.webp" alt="Portfolio2" width="300" height="200">
+                <img src="media/portfolio3.jpg" alt="Portfolio3" width="300" height="200">
+            </div>s
+            
         </section>
 
-        <section>
+        <section id="services-id">
             <h1>Paslaugos</h1>
             <p>
                 <video width="320" height="240" autoplay muted loop>
@@ -93,5 +111,17 @@
                 </audio>                
             </p>
         </section>
+
+        <footer class="footer" id="contacts-id">
+            <p><b>Sukūrė:</b> Anicetas Čeponis</p>
+            <p><b>Telefono nr.:</b> +370 111 22222</p>
+            <p><b>Email:</b> anicetas.ceponis@stud.vilniustech.lt</p>
+            
+            <div class="social-icons">
+                <a href="https://facebook.com"><img src="media/facebook-icon.png" alt="Facebook"></a>
+                <a href="https://twitter.com"><img src="media/twitter-icon.webp" alt="Twitter"></a>
+                <a href="https://linkedin.com"><img src="media/linkedin-icon.webp" alt="LinkedIn"></a>
+            </div>
+        </footer>
     </body>
 </html>

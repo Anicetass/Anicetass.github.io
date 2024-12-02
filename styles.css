@@ -22,7 +22,7 @@ p {
 section {
     margin: 2rem auto;
     padding: 2rem;
-    border: 1px solid var(--text-color);
+    border: 1px solid var(--third-color);
     background-color: var(--secondary-color);
     border-radius: 10px;
     align-items: center;
@@ -109,7 +109,7 @@ ul li::before {
     gap: 2rem;
     align-items: center; 
     justify-content: center; 
-    text-align: left; 
+    text-align: left;
 }
 
 .resume-column {
@@ -166,6 +166,7 @@ button:hover {
     --text-color: #000000;
     --primary-color: #007bff;
     --secondary-color: #f9f9f9;
+    --third-color: #d3d3d3;
 }
 
 body.dark-theme {
@@ -173,6 +174,7 @@ body.dark-theme {
     --text-color: #ffffff;
     --primary-color: #00bfff;
     --secondary-color: #2e2e2e;
+    --third-color: #5e5e5e;
 }
 
 body {
@@ -201,7 +203,7 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     background-color: var(--secondary-color);
-    border: 1px solid var(--text-color);
+    border: 1px solid var(--third-color);
     padding: 1rem 2rem;
     margin: 2rem;
     border-radius: 10px;
@@ -233,7 +235,7 @@ a:hover {
 .footer {
     background-color: var(--secondary-color);
     color: var(--text-color);
-    border: 1px solid var(--text-color);
+    border: 1px solid var(--third-color);
     text-align: center;
     padding: 0.5rem 0.5rem 0.5rem 2rem;
     border-radius: 10px;
@@ -247,4 +249,22 @@ a:hover {
 
 .social-icons a:hover img {
     filter: brightness(0.8);
+}
+
+/* mathml */
+
+math {
+    display: block;
+    text-align: left;
+    justify-content: left;
+}
+
+
+/* clock */
+#clock {
+    font-size: 2rem;
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    text-align: center;
+    margin-top: 20px;
 }

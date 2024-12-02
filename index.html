@@ -7,19 +7,20 @@
         <meta charset="utf-8"/>
         <meta name="description" content="HTML lab">
         <meta name="keywords" content="HTML">
-        <title>HTML laboratorinis 4</title>
+        <title>HTML laboratorinis 5</title>
         <link rel="stylesheet" href="styles.css">
         <script src="dark_light_theme.js" defer></script>
     </head>
 
     <body>
         <button id="theme-toggle">Šviesus/Tamsus režimas</button>
+        <div id="clock">00:00:00</div>
 
         <header class="header">
             <img src="media/logo.jpg" alt="Logo" class="logo">
             <nav class="nav">
                 <ul>
-                    <li><a href="#about-id">Apie</a></li>
+                    <li><a href="#about-id">About</a></li>
                     <li><a href="#resume-id">Resume</a></li>
                     <li><a href="#portfolio-id">Portfolio</a></li>
                     <li><a href="#services-id">Paslaugos</a></li>
@@ -91,12 +92,66 @@
                 <img src="media/portfolio1.jpg" alt="Portfolio1" width="300" height="200">
                 <img src="media/portfolio2.webp" alt="Portfolio2" width="300" height="200">
                 <img src="media/portfolio3.jpg" alt="Portfolio3" width="300" height="200">
-            </div>s
+                <svg width="400" height="100">
+                    <g>
+                        <rect x="0" y="20" rx="10" ry="10" width="120" height="60" fill="lightblue">
+                            <animateMotion
+                                path="M0,0 L280,0 L0,0"
+                                begin="0s"
+                                dur="4s"
+                                repeatCount="indefinite" />
+                        </rect>
+                        <text x="60" y="55" text-anchor="middle" alignment-baseline="middle" font-size="1.5rem" fill="black">
+                            SVG
+                            <animateMotion
+                                path="M0,0 L280,0 L0,0"
+                                begin="0s"
+                                dur="4s"
+                                repeatCount="indefinite" />
+                        </text>
+                    </g>
+                </svg>
+                
+                
+            </div>
             
         </section>
 
         <section id="services-id">
             <h1>Paslaugos</h1>
+            <p><u>MathML formulė:</u></p>
+            <math display="block">
+                <mrow>
+                    <mi>f</mi>
+                    <mo>(</mo>
+                    <mi>a</mi>
+                    <mo>)</mo>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mn>1</mn>
+                        <mrow>
+                            <mn>2</mn><mi>&pi;</mi><mi>i</mi>                        
+                        </mrow>
+                    </mfrac>
+                    <mo>&conint;</mo>
+                    <mfrac>
+                        <mrow>
+                            <mi>f</mi>
+                            <mo>(</mo>
+                            <mi>a</mi>
+                            <mo>)</mo>
+                        </mrow>
+                        <mrow>
+                            <mi>z</mi>
+                            <mo>-</mo>
+                            <mi>a</mi>
+                        </mrow>
+                    </mfrac>                    
+                    <mo>d</mo>
+                    <mi>z</mi>
+                </mrow>
+            </math>
+
             <p>
                 <video width="320" height="240" autoplay muted loop>
                 <source src="media/video.mp4" type="video/mp4">
